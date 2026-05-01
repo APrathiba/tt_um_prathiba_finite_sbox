@@ -27,6 +27,7 @@ module tt_um_prathiba_finite_sbox (
         .odat(sbox_out)
     );
 
+
     // Connect outputs
     assign uo_out[3:0] = sbox_out;
 
