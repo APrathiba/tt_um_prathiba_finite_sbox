@@ -6,8 +6,7 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
-
+PROJECT_SOURCES = tt_um_prathiba_finite_sbox.v SBoxIntegration.v isomorphic.v InverseIsomorphic.v AffineTransform.v Multiplier.v PhaseBlock.v SquareOrInv.v
 ifneq ($(GATES),yes)
 
 # RTL simulation:

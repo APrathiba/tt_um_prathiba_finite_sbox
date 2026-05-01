@@ -15,8 +15,15 @@ top_module: "tt_um_prathiba_finite_sbox"
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
-  source_files:
-    - "project.v"
+source_files:
+    - "tt_um_prathiba_finite_sbox.v"
+    - "SBoxIntegration.v"
+    - "isomorphic.v"
+    - "InverseIsomorphic.v"
+    - "AffineTransform.v"
+    - "Multiplier.v"
+    - "PhaseBlock.v"
+    - "SquareOrInv.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
