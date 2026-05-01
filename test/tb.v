@@ -96,8 +96,7 @@ module tb ();
     $display(" Test Completed ");
     $display("====================================");
 
-    #20;
-    $finish;
+   
 
   end
 
