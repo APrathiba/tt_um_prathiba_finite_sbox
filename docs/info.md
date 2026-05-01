@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project implements a lightweight AES S-box using composite field arithmetic. It performs the non-linear transformation required for the Advanced Encryption Standard (AES) by breaking down the 8-bit operations into smaller 4-bit operations.
 
 ## How to test
 
-Explain how to use your project
+After reset, provide an input value to `ui_in[3:0]`. The corresponding S-box output will appear on `uo_out[3:0]`. You can verify the mapping against the standard AES S-box table or the specific implementation logic defined in the testbench.
 
 ## External hardware
 
