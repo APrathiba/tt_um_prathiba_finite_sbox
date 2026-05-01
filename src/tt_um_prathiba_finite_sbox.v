@@ -20,10 +20,11 @@ module tt_um_prathiba_finite_sbox (
     // Internal wire for S-box output
     wire [3:0] sbox_out;
 
-    // Instantiate finite-field S-box
+
+// Instantiate finite-field S-box with correct port names
     SBoxIntegration uut (
-        .SboxIn(ui_in[3:0]),
-        .SboxOut(sbox_out)
+        .idat(ui_in[3:0]),
+        .odat(sbox_out)
     );
 
     // Connect outputs
