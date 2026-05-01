@@ -9,26 +9,27 @@ module tt_um_prathiba_finite_sbox (
     output wire [7:0] uio_out,    // Bidirectional outputs
     output wire [7:0] uio_oe,     // Output enable
 
-    input  wire clk,              // Unused
-    input  wire rst_n             // Unused
+    input  wire ena,              // Design enable
+    input  wire clk,              // Clock
+    input  wire rst_n             // Reset
 );
 
     // Prevent unused signal warnings
-    wire _unused = &{clk, rst_n, uio_in};
+    wire _unused = &{ena, clk, rst_n, uio_in};
 
     // Internal wire for S-box output
     wire [3:0] sbox_out;
 
-    // Instantiate your finite-field S-box
+    // Instantiate finite-field S-box
     SBoxIntegration uut (
         .SboxIn(ui_in[3:0]),
         .SboxOut(sbox_out)
     );
 
-    // Connect S-box output to Tiny Tapeout outputs
+    // Connect outputs
     assign uo_out[3:0] = sbox_out;
 
-    // Remaining outputs unused
+    // Unused outputs
     assign uo_out[7:4] = 4'b0000;
 
     // Bidirectional IO unused
