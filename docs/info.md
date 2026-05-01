@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This project implements a lightweight  S-box using composite field arithmetic. It performs the non-linear transformation required for the Advanced Encryption Standard (AES) by breaking down the 8-bit operations into smaller 4-bit operations.
+This project implements a lightweight  S-box using composite field arithmetic. It performs the non-linear transformation required for the smaller 4-bit operations.
 
 ## How to test
 
